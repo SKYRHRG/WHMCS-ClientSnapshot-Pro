@@ -1,0 +1,371 @@
+/**
+ * ClientSnapshot Pro - Custom Styles
+ * 
+ * @package    WHMCS
+ * @subpackage Addon Modules
+ * @author     SKYRHRG Technologies System
+ * @version    1.0
+ * @copyright  Copyright (c) 2026 SKYRHRG Technologies System
+ * @license    https://www.gnu.org/licenses/gpl-3.0.html GNU General Public License v3.0
+ */
+
+/* ===========================
+   Container & Header
+   =========================== */
+.clientsnapshot-container {
+    padding: 0;
+    margin: 0;
+}
+
+.cs-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.cs-header-content h2 {
+    color: #fff;
+    margin: 0 0 5px 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.cs-header-content h2 i {
+    margin-right: 10px;
+}
+
+.cs-subtitle {
+    color: rgba(255, 255, 255, 0.85);
+    margin: 0;
+    font-size: 14px;
+}
+
+.cs-header-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.cs-header-actions .btn {
+    padding: 10px 20px;
+    font-weight: 500;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.cs-header-actions .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cs-header-actions .btn-success {
+    background: #28a745;
+    border-color: #28a745;
+}
+
+.cs-header-actions .btn-primary {
+    background: #007bff;
+    border-color: #007bff;
+}
+
+/* ===========================
+   Statistics Cards
+   =========================== */
+.cs-stats-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.cs-stat-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.cs-stat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.cs-stat-primary {
+    border-left-color: #667eea;
+}
+
+.cs-stat-success {
+    border-left-color: #28a745;
+}
+
+.cs-stat-info {
+    border-left-color: #17a2b8;
+}
+
+.cs-stat-warning {
+    border-left-color: #ffc107;
+}
+
+.cs-stat-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.cs-stat-primary .cs-stat-icon {
+    background: rgba(102, 126, 234, 0.15);
+    color: #667eea;
+}
+
+.cs-stat-success .cs-stat-icon {
+    background: rgba(40, 167, 69, 0.15);
+    color: #28a745;
+}
+
+.cs-stat-info .cs-stat-icon {
+    background: rgba(23, 162, 184, 0.15);
+    color: #17a2b8;
+}
+
+.cs-stat-warning .cs-stat-icon {
+    background: rgba(255, 193, 7, 0.15);
+    color: #d39e00;
+}
+
+.cs-stat-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.cs-stat-value {
+    font-size: 26px;
+    font-weight: 700;
+    color: #333;
+    line-height: 1.2;
+}
+
+.cs-stat-label {
+    font-size: 13px;
+    color: #888;
+    font-weight: 500;
+}
+
+/* ===========================
+   Data Table
+   =========================== */
+.cs-table-container {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.cs-datatable {
+    width: 100% !important;
+}
+
+.cs-datatable thead th {
+    background: #f8f9fa;
+    color: #555;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 15px 12px;
+    border-bottom: 2px solid #e9ecef;
+}
+
+.cs-datatable thead th i {
+    margin-right: 6px;
+    color: #888;
+}
+
+.cs-datatable tbody td {
+    padding: 14px 12px;
+    vertical-align: middle;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.cs-datatable tbody tr:hover {
+    background: #f8f9ff;
+}
+
+.cs-client-id {
+    background: #e9ecef;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #666;
+}
+
+.cs-datatable .badge {
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.cs-datatable .badge-secondary {
+    background: #6c757d;
+}
+
+.cs-datatable .badge-success {
+    background: #28a745;
+}
+
+.cs-datatable .badge-primary {
+    background: #667eea;
+}
+
+.cs-datatable .badge-warning {
+    background: #ffc107;
+    color: #333;
+}
+
+.cs-datatable .btn-sm {
+    padding: 6px 12px;
+    border-radius: 6px;
+}
+
+/* DataTables Custom Styling */
+.cs-table-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.cs-table-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.dataTables_filter input {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 8px 15px;
+    margin-left: 10px;
+    transition: all 0.3s ease;
+}
+
+.dataTables_filter input:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.15);
+    outline: none;
+}
+
+.dataTables_length select {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin: 0 5px;
+}
+
+.dataTables_paginate .paginate_button {
+    border-radius: 6px !important;
+    margin: 0 3px;
+}
+
+.dataTables_paginate .paginate_button.current {
+    background: #667eea !important;
+    border-color: #667eea !important;
+    color: #fff !important;
+}
+
+.dataTables_paginate .paginate_button:hover {
+    background: #f0f0f0 !important;
+    border-color: #e0e0e0 !important;
+}
+
+/* ===========================
+   Footer
+   =========================== */
+.cs-footer {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    border-top: 1px solid #eee;
+}
+
+.cs-footer p {
+    margin: 0;
+    color: #888;
+    font-size: 13px;
+}
+
+.cs-footer strong {
+    color: #667eea;
+}
+
+/* ===========================
+   Responsive Design
+   =========================== */
+@media (max-width: 768px) {
+    .cs-header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .cs-header-actions {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cs-stats-row {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 15px;
+    }
+
+    .cs-table-container {
+        margin: 0 15px 20px 15px;
+        padding: 15px;
+    }
+
+    .cs-stat-value {
+        font-size: 20px;
+    }
+
+    .cs-footer {
+        margin: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cs-stats-row {
+        grid-template-columns: 1fr;
+    }
+
+    .cs-header-actions {
+        flex-direction: column;
+    }
+
+    .cs-header-actions .btn {
+        width: 100%;
+    }
+}
