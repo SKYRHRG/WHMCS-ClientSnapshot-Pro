@@ -1,0 +1,30 @@
+{
+  "schema": "1.0",
+  "type": "whmcs-addons",
+  "name": "clientsnapshot",
+  "version": "1.0",
+  "license": "proprietary",
+  "category": "utilities",
+  "description": {
+    "name": "ClientSnapshot Pro",
+    "tagline": "Client data overview with active service counts and export capability",
+    "long": "A professional WHMCS addon module that displays client information including name, phone number, and total active services. Features include a clean DataTable dashboard, CSV export, and Excel export functionality.",
+    "features": [
+      "View all clients with active service counts",
+      "Search and sort clients by any column",
+      "Export data to CSV format",
+      "Export data to Excel format",
+      "Responsive Bootstrap design",
+      "Real-time statistics dashboard"
+    ]
+  },
+  "support": {
+    "support_url": "https://skyrhrgts.com/support"
+  },
+  "authors": [
+    {
+      "name": "SKYRHRG Technologies System",
+      "homepage": "https://skyrhrgts.com/"
+    }
+  ]
+}
